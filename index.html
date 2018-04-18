@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/heart-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Basra</title>
+</head>
+<body>
+  <!-- start main section -->
+  <section class="main-section">
+
+    <!-- computer cards -->
+    <div class="computer">
+        <button id="startBtn">Start</button>
+        <div class="comp-card">
+            <div class="comp-g"></div>
+            <div class="comp-g"></div>
+            <div class="comp-g"></div>
+            <div class="comp-g"></div>
+        </div>
+        <div class="comp-score">
+            <h3>Computer</h3>
+            <p>0</p>
+        </div>
+    </div>
+
+    <!-- ground -->
+    <div class="table">
+      <div class="deck"><div class="deck-card">
+        <img src="images/facedown.png" alt="">
+        <img src="images/facedown.png" class="deck-shape1" alt="">
+        <img src="images/facedown.png" class="deck-shape2" alt="">                        
+      </div></div>
+
+      <div class="ground1">
+        <div class="card-home"><div class="card"></div></div> <!-- you must create the new card inside card div -->
+        <div class="card-home"><div class="card"></div></div>
+      </div>
+
+      <div class="ground2">
+        <div class="card-home"><div class="card"></div></div>
+        <div class="card-home"><div class="card"></div></div>
+      </div>
+
+      <div class="empty-div">
+
+        </div>
+    </div>
+
+    <!-- player cards -->
+    <div class="player">
+        <div class="empty-div"></div>
+        <div class="player-card">
+            <div class="player-g"></div>
+            <div class="player-g"></div>
+            <div class="player-g"></div>
+            <div class="player-g"></div>
+        </div>
+
+        <div class="player-score">
+          <h3>Player</h3>
+          <p>0</p>
+        </div>
+    </div>
+
+  </section>
+  <dialog id="winner"></dialog>
+  <div class="play-againDiv"><button class="play-again">Play Again</button></div>
+  <div  class="your-name"><input type="text" placeholder="Enter Your Name..." class="name" /> <button id="EnterBtn">Enter</button></div>
+    
+  <!-- end main section -->
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/main.js"></script>    
+</body>
+</html>
